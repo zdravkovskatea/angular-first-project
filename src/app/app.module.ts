@@ -26,7 +26,8 @@ import {ProductService} from './services/product.service';
     RouterModule.forRoot([
       {path: 'test', component: TestComponentComponent},
       {path: 'products', component: ProductListComponent},
-      {path: 'products/add', component: AddProductComponent}
+      {path: 'products/add', component: AddProductComponent},
+      {path: 'products/edit/:id', component: AddProductComponent}
     ])
   ],
   providers: [ProductService],
