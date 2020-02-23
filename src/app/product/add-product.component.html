@@ -1,0 +1,18 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <label>
+    Name:
+    <input type="text" formControlName="name">
+  </label>
+  <br/>
+  <label>
+    Price:
+    <input type="text" formControlName="price">
+  </label>
+  <br/>
+  <label>
+    Description:
+    <textarea formControlName="description"></textarea>
+  </label>
+  <button type="submit" [disabled]="!form.valid">Save</button>
+</form>
